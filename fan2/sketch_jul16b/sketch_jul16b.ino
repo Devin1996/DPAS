@@ -1,12 +1,13 @@
+#include <DHT.h>
+#include <DHT_U.h>
 
-#include "DHT.h"
-#include "DHT_U.h"
 
 int sen = 3;
 float temp;
 float hum;
 
-DHT dht
+ dht DHT;
+
 void setup() {
   Serial.begin(9600);
   dht.begin();

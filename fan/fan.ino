@@ -1,3 +1,4 @@
+
 #include "DHT.h"
 
 #define DHTPIN 2     // what pin we're connected to
@@ -31,11 +32,11 @@ void loop() {
     return;
   }
   
-  if(h > maxHum || t > maxTemp) {
-      digitalWrite(fan, HIGH);
-  } else {
-     digitalWrite(fan, LOW); 
-  }
+//  if(h > maxHum || t > maxTemp) {
+//      digitalWrite(fan, HIGH);
+//  } else {
+//     digitalWrite(fan, LOW); 
+//  }
   
   Serial.print("Humidity: "); 
   Serial.print(h);
