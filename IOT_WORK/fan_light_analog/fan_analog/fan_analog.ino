@@ -44,6 +44,5 @@ void loop() {
 
   delay(5000);//Wait 5 seconds before accessing sensor again.
 
-  //Fastest should be once every two seconds.
 
 }// end loop()
