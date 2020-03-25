@@ -23,6 +23,7 @@ void setup() {
   delay(1000);//Wait before accessing Sensor
 
   digitalWrite(fanTestLED, LOW);
+  digitalWrite(singleVoiceLED, LOW);
 
 }
 
@@ -59,6 +60,7 @@ void SingleLightVoiceControl() {
     {
 
       digitalWrite(singleVoiceLED, LOW);
+      
 
     }
   }
@@ -73,7 +75,7 @@ void TempConreolledFan(){
   float temp = DHT.temperature;
   float humidity = DHT.humidity;
  
-  if (temp > 32.00) {  
+  if (temp > 34.00) {  
     digitalWrite(fanTestLED, HIGH);   
 
   }
@@ -91,6 +93,6 @@ void TempConreolledFan(){
   Serial.print(temp);
   Serial.println("C  ");
 
-  delay(5000);//Wait 5 seconds before accessing sensor again.
+  delay(2500);//Wait 2.5 seconds before accessing sensor again.
 
   }
